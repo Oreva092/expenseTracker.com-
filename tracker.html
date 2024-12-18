@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="tracker.css">
+    <script src="https://kit.fontawesome.com/b55bbba4f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        Expense Tracker
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="topBar">
+                <p class="text">Your current balance</p>
+                <p class="amountHolder">
+                    <span id="currency">$</span>
+                    <span id="balance">0</span>
+                </p>
+            </div>
+            <div class="form">
+                <p>Add transaction</p>
+                <div class="formContainer">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter name of transaction...">
+                </div>
+                <div class="formContainer">
+                    <label for="name">Type</label>
+                    <div class="radio">
+                        <input type="radio" name="type" id="income" checked>
+                        <label for="radio">Income</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="type" id="expense">
+                        <label for="radio">Expense</label>
+                    </div>
+                </div>
+                <div class="formContainer">
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" id="amount" placeholder="Enter amount">
+                </div>
+                <button class="btn" id="save">Save Transaction</button>
+                <button class="btn" id="cancel">Cancel edit</button>
+            </div>
+            <p class="heading">Transaction List:</p>
+            <ul id="listOfTransactions">
+                <!-- <li class="transaction income">
+                    <p>Income 1</p>
+                    <div class="rightSide">
+                        <p>$500</p>
+                        <button>edit</button>
+                        <button>delete</button>
+                    </div>
+                </li>
+                <li class="transaction expense">
+                    <p>Expense 1</p>
+                    <div class="rightSide">
+                        <p>$500</p>
+                        <button>edit</button>
+                        <button>delete</button>
+                    </div>
+                </li>-->
+            </ul> 
+        </div>
+    </div>
+    <script src="tracker.js"></script>
+</body>
+</html>

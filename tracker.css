@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.topBar{
+    background: green;
+    color: white;
+    padding: 20px;
+    min-width: 300px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.text{
+    color: #eee;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+}
+.amountHolder{
+    font-size: 2rem;
+}
+.form{
+    background-color: #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.form p{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+} 
+label, input{
+    display: block;
+}
+input{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+input[type="number"]{
+    margin-bottom: 10px;
+}
+.formContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.radio{
+    display: flex;
+    align-items: center;
+}
+button{
+    outline: none;
+    border: none;
+    background: none;
+}
+.btn{
+    display: block;
+    width: 100%;
+    background-color: green;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover{
+    background-color: teal;
+}
+p.heading{
+    margin: 10px 0;
+}
+ul{
+    list-style: none;
+}
+.transaction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    margin: 5px 0;
+}
+.income{
+    background-color: green;
+}
+.expense{
+    background-color: red;
+}
+.rightSide{
+    display: flex;
+    gap: 5px;
+}
+.rightSide button{
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.rightSide button:hover{
+    color: skyblue;
+    cursor: pointer;
+}
+#cancel{
+    background-color: red;
+    display: none;
+}
+#cancel:hover{
+    background-color: red;
+}
